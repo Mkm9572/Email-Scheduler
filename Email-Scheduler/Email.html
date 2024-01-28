@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Email-Scheduler</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Email Scheduler</h1>
+        <form id="emailForm">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" required>
+
+            <label for="body">Email Body:</label>
+            <textarea id="body" required></textarea>
+
+            <label for="recipient">Recipient Email:</label>
+            <input type="email" id="recipient" required>
+
+            <label for="delay">Time Delay (hours):</label>
+            <input type="number" id="delay" required>
+
+            <button type="button" onclick="scheduleEmail()">Schedule Email</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
